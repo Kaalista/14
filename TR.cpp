@@ -1,4 +1,4 @@
-#include "Trie.h"
+#include "TR.h"
 #include <string>
 using namespace std;
 
@@ -69,11 +69,11 @@ void TRIE::prefix(string pref){
 
     vector<string> vec = vectorWords(current, pref, temp);
     if (vec.empty())
-    { cout << "Íå íàéäåíî ñëîâ: " << pref << endl;
+    { cout << "ÃÃ¥ Ã­Ã Ã©Ã¤Ã¥Ã­Ã® Ã±Ã«Ã®Ã¢: " << pref << endl;
         return;}
     else
     {
-      cout << " Æìèòå Enter :  " << pref << endl << endl;
+      cout << " Ã†Ã¬Ã¨Ã²Ã¥ Enter :  " << pref << endl << endl;
         for (int i = 0; i < vec.size(); i++)
         {
            cout << vec[i];
@@ -88,7 +88,7 @@ void TRIE::prefix(string pref){
 
 std::string TRIE::entPref(){
     setlocale(LC_ALL, "");
-   cout << "Ââåäèòå ïðåôèêñ: ";
+   cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã°Ã¥Ã´Ã¨ÃªÃ±: ";
    string str;
     cin >> str;
     cout << endl;
