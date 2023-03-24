@@ -3,19 +3,12 @@
 using namespace std;
 
 int main()
-{
-
-    TRIE trie;
-    trie.dictionary();
-    cout <<endl << endl;
-    cout << "òåñò êîíñîëüíûé" << endl << endl;
-    cout << endl;
+{TRIE trie;
+trie.dictionary();cout <<endl << endl;
+cout << "Ã²Ã¥Ã±Ã² ÃªÃ®Ã­Ã±Ã®Ã«Ã¼Ã­Ã»Ã©" << endl << endl;cout << endl;
     trie.prefix("te");
-    cout << "òåñò ïîëüçîâàòåëüñêèé" <<endl<<endl;
-    string pref = trie.entPref();
-    trie.prefix(pref);
-
-    return 0;
-}
+cout << "Ã²Ã¥Ã±Ã² Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¥Ã«Ã¼Ã±ÃªÃ¨Ã©" <<endl<<endl;
+    string pref = trie.entPref(); trie.prefix(pref);
+return 0;}
 
 
