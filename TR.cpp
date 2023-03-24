@@ -52,7 +52,7 @@ void TRIE::prefix(string pref){
     { return;}
     vector<string> vec = vectorWords(current, pref, temp);
     if (vec.empty())
-    { cout << "Íå íàéäåíî ñëîâ: " << pref << endl;
+    { cout << "НЕТ СЛОВ: " << pref << endl;
         return;}
     else
     {cout << " KLIC Enter :  " << pref << endl << endl;
@@ -65,7 +65,7 @@ void TRIE::prefix(string pref){
             { cout << vec[i]; break;}}}}
 string TRIE::entPref(){
     setlocale(LC_ALL, "");
-   cout << "Ââåäèòå ïðåôèêñ: ";
+   cout << "ВВЕДИТЕ ПРЕФ: ";
    string str;
     cin >> str;
     cout << endl;
